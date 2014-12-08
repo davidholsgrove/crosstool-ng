@@ -219,6 +219,7 @@ do_binutils_backend() {
         --target=${CT_TARGET}                                   \
         --prefix=${prefix}                                      \
         --disable-werror                                        \
+        --disable-gdb                                           \
         "${extra_config[@]}"                                    \
         ${CT_ARCH_WITH_FLOAT}                                   \
         ${BINUTILS_SYSROOT_ARG}                                 \
